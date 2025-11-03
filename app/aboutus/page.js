@@ -3,8 +3,8 @@ import { useRouter } from "next/navigation";
 export default function AboutUs(){
   const router=useRouter();
     return(
-        <div className=" bg-gray-100 ">
-            <div className="flex flex-row md:items-center px-30 md:py-10 py-5 border-b-gray-600 border-b-1  md:justify-between bg-black  md:w-full ">
+        <div className=" bg-gray-100 dark:bg-gray-600 ">
+            <div className="flex flex-row md:items-center px-30 md:py-10 py-5 border-b-gray-600 border-b-1  md:justify-between bg-black text-white  md:w-full ">
                
                 <img className=" md:w-28 w-24 mr-8 " src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"/>
                 <div className="md:flex flex-row hidden md:block font-bold text-lg px-8 space-x-10  ">
@@ -37,7 +37,7 @@ export default function AboutUs(){
       </div>
     </div>
        
-       <div className="text-[#82704e] text-2xl text-center md:mt-[0px] mt-[-220px] bg-amber-50"><div className="py-10" >
+       <div className="text-[#82704e] text-2xl text-center md:mt-[0px] mt-[-220px] bg-amber-50 dark:bg-amber-950"><div className="py-10" >
   ---OUR TRUSTED 8K HAPPY PARTNER---
 </div>
 <div className="flex flex-row  md:overflow-x-auto md:space-x-8 md:p-6 p-3 scrollbar-hide bg-contain">
@@ -69,7 +69,7 @@ export default function AboutUs(){
 </div>
 </div>
 
-<div className="flex flex-col md:flex-row items-center justify-center bg-white px-8 py-16 gap-10 ">
+<div className="flex flex-col md:flex-row items-center justify-center bg-white dark:bg-black px-8 py-16 gap-10 ">
   <div className="flex flex-col md:flex-row gap-6 w-full md:w-1/2 justify-center">
     <img src="https://images.unsplash.com/photo-1751810105833-001843080aa1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJlc3RhdXJhbnQlMjB3YWl0ZXIlMjBnaXZpbmclMjBmb29kfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" className="rounded-xl shadow-lg md:w-[250px] md:h-[350px] h-[200px] w-full  object-cover"/>
      <img
@@ -77,16 +77,16 @@ export default function AboutUs(){
        className="rounded-xl shadow-lg md:w-[250px] md:h-[350px] h-[200px] w-full object-cover"
     />
   </div>
-<div className="w-full md:w-3/4 text-left  bg-amber-50 px-8 py-10">
+<div className="w-full md:w-3/4 text-left  bg-amber-50 dark:bg-amber-950 px-8 py-10">
 <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F2.png&w=3840&q=75" className="w-30 h-25 object-contain"/>
     <h3 className="text-[#82704e] font-semibold text-xl flex items-center ">
       <span className="mr-2">ABOUT US</span>
       <span className="w-16 h-[1px] bg-[#82704e] inline-block"></span>
     </h3>
-    <h1 className="md:text-5xl text-4xl font-bold leading-tight text-black">
+    <h1 className="md:text-5xl text-4xl font-bold leading-tight text-black dark:text-white">
       We Invite You To Visit Our Restaurant
     </h1>
-    <p className="text-gray-600 text-lg">
+    <p className="text-gray-600 dark:text-gray-100 text-lg">
       A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.
 
 
@@ -96,11 +96,11 @@ export default function AboutUs(){
     </button>
   </div>
 </div>
-<div className="bg-gray-300 md:h-160">
+<div className="bg-gray-300 dark:bg-zinc-800 md:h-160">
 <div className="text-[#82704e] font-bold text-2xl md:mx-110 mx-5 pt-20 ">
   ---MASTER CHEFS---
 </div>
-<div className="text-black font-bold text-4xl md:mx-80 mx-2 md:mt-[0px] mt-5 ">
+<div className="text-black dark:text-white font-bold text-4xl md:mx-80 mx-2 md:mt-[0px] mt-5 ">
   MEET OUR SPECIAL CHEFS
 </div>
 <div className=" py-20 flex justify-center">
@@ -158,21 +158,21 @@ export default function AboutUs(){
     <iframe width="560" height="315"className="md:w-[500px] w-full  h-[300px] object-cover  md:mx-10 md:mt-0 mt-10 rounded-lg" src="https://www.youtube.com/embed/F3zw1Gvn4Mk?si=0ftxkCNJCcWesXoS" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" ></iframe>
 
    
-    <div className="absolute md:top-[-6rem]  md:left-133  bg-white shadow-lg  md:w-130 w-full px-4 md:px-10 md:py-10 py-2 ">
-      <h3 className="text-4xl font-bold text-gray-800 mb-2 md:mt-5 mt-20">
+    <div className="absolute md:top-[-6rem]  md:left-133  bg-white dark:bg-zinc-900 shadow-lg  md:w-130 w-full px-4 md:px-10 md:py-10 py-2 ">
+      <h3 className="text-4xl font-bold dark:text-white text-gray-800 mb-2 md:mt-5 mt-20">
         Our Story
       </h3>
     
-      <p className="my-4 text-gray-600">
+      <p className="my-4 text-gray-600dark:text-gray-300 text-lg">
         A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center..
       </p>
       <div>
         <ol >
-          <li className="flex items-start mb-2 text-[20px] text-black text-bold ">Sunday to Tuesday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   10:00 - 09:00</li>
+          <li className="flex items-start mb-2 text-[20px] text-black dark:text-[#7b6749] text-bold ">Sunday to Tuesday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   10:00 - 09:00</li>
                                               
- <li className="flex items-start mb-2 text-[20px] text-black text-bold">Wednesday to Thursday:&nbsp;
+ <li className="flex items-start mb-2 text-[20px] text-black dark:text-[#7b6749] text-bold">Wednesday to Thursday:&nbsp;
 11:30 - 10:30</li>
-<li className="flex items-start mb-2 text-[20px] text-black text-bold">Friday & Saturday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<li className="flex items-start mb-2 text-[20px] text-black dark:text-[#7b6749] text-bold">Friday & Saturday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 10:30 - 12:00</li>
         </ol>
 
@@ -181,8 +181,8 @@ export default function AboutUs(){
   <img className="mx-auto block h-24 rounded-full sm:mx-0 sm:shrink-0" src="https://tse1.mm.bing.net/th/id/OIP.dRLdfGBeZTZkhsVOumBI-gAAAA?pid=Api&P=0&h=180" alt="" />
   <div className="space-y-2 text-center sm:text-left">
     <div className="space-y-0.5">
-      <p className="text-lg font-semibold text-[#7b6749]">Call Anytime</p>
-      <p className="text-2xl font-bold italic text-gray-900">+964733-378901</p>
+      <p className="text-lg font-semibold text-[#7b6749] dark:text-amber-100">Call Anytime</p>
+      <p className="text-2xl font-bold italic dark:text-white text-gray-900">+964733-378901</p>
     </div>
     
   </div>
