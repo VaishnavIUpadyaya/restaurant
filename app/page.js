@@ -1,9 +1,18 @@
 "use client";
 import { useRouter } from "next/navigation";
+import { useState } from 'react';
+import FoodCard from "./components/FoodCard";
+import { food } from "./items";
 export default function Land(){
   const router=useRouter();
   const handleChange=(e)=>{const selected=e.target.value; if(selected){router.push(selected);}};
-    return(
+  const [cart, setCart] = useState([]);
+  const addToCart = (item) => setCart([...cart, item]); 
+   
+  
+  
+  
+  return(
        <div >
          <div className="bg-gray-800 md:h-[50px] h-[40px] w-full flex flex-row">
           <h2 className="md:ml-[40px] ml-[10px] font-bold relative z-10  mt-[10px]">envato</h2><h2 className="relative z-10  mt-[10px]">market</h2>
@@ -135,32 +144,26 @@ export default function Land(){
                   </div>
 
              </div>
-          <div className=" md:flex flex-row flex-col mt-[60px] ">
-          <div className="h-[500px] md:w-[400px] w-full  bg-white md:ml-[50px]">   <img className="h-[300px] w-full   border-1 border-black" src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F1.jpg&w=1920&q=75"/><h2 className="text-black text-2xl font-bold md:ml-[30px] ml-3 md:mt-[30px] mt-3">Braised Chicken Legs </h2><br></br><h3 className="text-gray-600 md:ml-[30px] ml-4 font-bold">4 chicken legs *  Chilli Sauce * Soft Drinks</h3>
-           <div className=" md:ml-[30px] ml-4 mt-3 mt-[15px] relative z-10"><h2 className="bg-white hover:bg-[#4b2a14] text-black hover:text-white h-[50px] w-[320px] rounded-[30px] border-2 border-black flex items-center justify-center"onClick={(event)=>alert("Added to cart...")}>Add to Cart</h2></div> 
-          </div>
-          
-          
-           <div className=" md:ml-[30px]  h-[500px] md:w-[400px] w-full bg-white"> <img className="h-[300px] w-full  border-1 border-black" src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F2.jpg&w=1920&q=75"/><h2 className="text-black text-2xl font-bold md:ml-[30px] ml-3 mt-[30px]">Bone Steak </h2><br></br><h3 className="text-gray-600 md:ml-[30px] ml-4 font-bold">4 chicken legs *  Chilli Sauce * Soft Drinks</h3>
-           <div className=" md:ml-[30px] ml-4 mt-[15px] relative z-10"><h2 className="bg-white hover:bg-[#4b2a14] text-black hover:text-white h-[50px] w-[320px] rounded-[30px] border-2 border-black flex items-center justify-center"onClick={(event)=>alert("Added to cart...")}>Add to Cart</h2></div> 
-           </div> 
-            <div className="md:ml-[30px] h-[500px] w-[400px]  bg-white">   <img className="h-[300px] w-full border-1 border-black "src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F3.jpg&w=1920&q=75"/><h2 className="text-black text-2xl font-bold md:ml-[20px] ml-3 mt-[30px]"> Fish Tacos with Chipotle Crema</h2><br></br><h3 className="text-gray-600 md:ml-[30px] ml-4 font-bold">4 chicken legs *  Chilli Sauce * Soft Drinks</h3>
-           <div className=" md:ml-[30px] ml-4 mt-[15px] relative z-10"><h2 className="bg-white hover:bg-[#4b2a14] text-black hover:text-white h-[50px] w-[320px] rounded-[30px] border-2 border-black flex items-center justify-center"onClick={(event)=>alert("Added to cart...")}>Add to Cart</h2></div> 
+             
+         <div className=" grid grid-cols-2 grid-rows-3 gap-5 md:ml-20  md:mt-10 mt-5  ">
+          {food.map((element,index)=> (
+            <FoodCard
+            key={index}
+            title={element.title}
+            foodimg={element.image}
+            description={element.description}
+            buttontext={"Add to Cart"}
+            onBorrowClick={()=>addToCart(element)}
+            />
+          ))}
+        
+           
+           
             </div> 
-            </div> 
-            <div  className=" md:flex flex-row flex-col mt-[60px]">
-            <div className="h-[500px] md:w-[400px] w-full  bg-white md:ml-[50px]">   <img className="h-[300px] w-full   border-1 border-black" src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F4.jpg&w=1920&q=75"/><h2 className="text-black text-2xl font-bold md:ml-[30px] ml-3 mt-[30px]"> Broken Lasagna & Parmesan</h2><br></br><h3 className="text-gray-600 md:ml-[30px] ml-4 font-bold">4 chicken legs *  Chilli Sauce * Soft Drinks</h3>
-           <div className=" md:ml-[30px] ml-4 mt-[15px] relative z-10"><h2 className="bg-white hover:bg-[#4b2a14] text-black hover:text-white h-[50px] w-[320px] rounded-[30px] border-2 border-black flex items-center justify-center"onClick={(event)=>alert("Added to cart...")}>Add to Cart</h2></div> 
-          </div>
+         
           
-          
-           <div className=" md:ml-[30px]  h-[500px] md:w-[400px]  bg-white"> <img className="h-[300px] w-full  border-1 border-black" src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F5.jpg&w=1920&q=75"/><h2 className="text-black text-2xl font-bold md:ml-[30px] ml-3 mt-[30px]">Seared Scallops with Butter </h2><br></br><h3 className="text-gray-600 md:ml-[30px] ml-4 font-bold">4 chicken legs *  Chilli Sauce * Soft Drinks</h3>
-           <div className=" md:ml-[30px] ml-4 mt-[15px] relative z-10"><h2 className="bg-white hover:bg-[#4b2a14] text-black hover:text-white h-[50px] w-[320px] rounded-[30px] border-2 border-black flex items-center justify-center"onClick={(event)=>alert("Added to cart...")}>Add to Cart</h2></div> 
-           </div> 
-            <div className=" md:ml-[30px] h-[500px] md:w-[400px] w-full  bg-white">   <img className="h-[300px] w-full border-1 border-black "src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F6.jpg&w=1920&q=75"/><h2 className="text-black text-2xl font-bold md:ml-[30px] ml-3 mt-[30px]">Double-Stack Mushroom </h2><br></br><h3 className="text-gray-600 md:ml-[30px] ml-4 font-bold">4 chicken legs *  Chilli Sauce * Soft Drinks</h3>
-           <div className=" md:ml-[30px] ml-4 mt-[15px] relative z-10"><h2 className="bg-white hover:bg-[#4b2a14] text-black hover:text-white h-[50px] w-[320px] rounded-[30px] border-2 border-black flex items-center justify-center"onClick={(event)=>alert("Added to cart...")}>Add to Cart</h2></div> 
-            </div> 
-           </div>
+           
+           
              
            
                 <div className="md:h-[600px] h-220  rounded-[40px]  bg-black  md:flex flex-row flex-col md:w-[1160px] w-full md:px-0 px-2 md:ml-[100px] md:mt-[100px]" >
@@ -267,7 +270,7 @@ export default function Land(){
          
           <div className="relative w-72 h-72 rounded-full border-[3px] border-[#7b6749] overflow-hidden">
             <img
-              src="/image/food.jpg"
+              src="/food.jpg"
               alt="Chef"
               className="object-cover w-full h-full"
             />
