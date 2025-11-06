@@ -39,22 +39,22 @@ export default function Login()
                   </div>
                 </div>
                 </div>   </div>
-                <div className="flex flex-row bg-white h-130  mt-10 ml-40">
-                    <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F14.jpg&w=3840&q=75"className="h-130 w-140   rounded-[20px]"/>
-                       <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"className="h-15 w-25 -ml-127 mt-12"/>
+                <div className="md:flex flex-row flex-col bg-white md:h-130  md:mt-10 -mt-40 md:ml-40">
+                    <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F14.jpg&w=3840&q=75"className="md:h-130 h-100 md:w-140 w-100 md:px-0 px-2  rounded-[20px]"/>
+                       <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"className="  h-15 w-25 md:-ml-127 md:mt-12 -mt-90 ml-7"/>
                     
                 
                 
-                  <div className="ml-130">  <h1 className="text-black text-3xl font-bold  mt-25 ">WELCOME BACK</h1></div>
-                   <div className="-ml-63"> <h6 className="text-gray-700  mt-38 ">Enter your email and password</h6></div>
-                    <div className="flex flex-col -ml-56">
-                        <div className="w-90 h-13 bg-gray-300 rounded-[5px] mt-50 ">
+                  <div className="md:ml-130 ml-10">  <h1 className="text-black text-3xl font-bold  md:mt-25 mt-90 ">WELCOME BACK</h1></div>
+                   <div className="md:-ml-63 ml-11"> <h6 className="text-gray-700  md:mt-38 mt-5 ">Enter your email and password</h6></div>
+                    <div className="flex flex-col md:-ml-56 ml-10">
+                        <div className="md:w-90 w-70 h-13 bg-gray-300 rounded-[5px] md:mt-50 mt-5 ">
                         <h1 className=" ml-5 mt-3 ">Email*</h1></div>
-                         <div className="w-90 h-13 bg-gray-300 rounded-[5px] mt-5 ">
+                         <div className="md:w-90 w-70 h-13 bg-gray-300 rounded-[5px] mt-5 ">
                         <h1 className=" ml-5 mt-3 ">Password*</h1></div>
-                        <div className="w-90 h-13 bg-gray-300 rounded-[5px] mt-5  flex justify-center items-center bg-[#7b4c2b]  hover:bg-yellow-600">
+                        <div className="md:w-90 w-70 h-13 bg-gray-300 rounded-[5px] mt-5  flex justify-center items-center bg-[#7b4c2b]  hover:bg-yellow-600">
                         <h1 className="-ml-5">Login</h1></div>
-                       <div className=" flex flex-row ">  <h6 className="text-gray-700  mt-5 ">Don't have an account?</h6><h6 className="text-red-500 underline mt-5 ml-2"> Register Now!</h6></div>
+                       <div className=" flex flex-row ">  <h6 className="text-gray-700 md:ml-0 ml-2 mt-5 ">Don't have an account?</h6><h6 className="text-red-500 underline mt-5 ml-2"> Register Now!</h6></div>
                     </div>
                     
                  
