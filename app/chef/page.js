@@ -13,10 +13,10 @@ export default function Chef(){
                 <div className="md:flex flex-row font-bold text-lg px-8 space-x-10 hidden md:block text-white">
                   <div onClick={()=>router.push("/")}>Home</div>
                   <div>Pages</div>
-                  <div>Menu</div>
+                  <div onClick={()=>router.push("/menu")}>Menu</div>
                   <div>Blog</div>
-                  <div>Shop</div>
-                  <img className="size-12 rounded-full mx-10  " src="https://tse1.mm.bing.net/th/id/OIP.JRBIv4WXa_jQW7MLYOe06wHaHa?pid=Api&P=0&h=180"/>
+                  <div onClick={()=>router.push("/cart")}>Shop</div>
+                  <img className="size-12 rounded-full mx-10  " src="https://tse1.mm.bing.net/th/id/OIP.JRBIv4WXa_jQW7MLYOe06wHaHa?pid=Api&P=0&h=180"onClick={()=>router.push("/cart")}/>
                   
                   </div>
                                     <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:bloc">Reservation</div>

@@ -7,12 +7,13 @@ export default function Land(){
   const router=useRouter();
   const handleChange=(e)=>{const selected=e.target.value; if(selected){router.push(selected);}};
   const [cart, setCart] = useState([]);
-  const addToCart = (item) => setCart([...cart, item]); 
-   
-  
-  
-  
-  return(
+  const addToCart = (item) => {
+    let cart=JSON.parse(localStorage.getItem("cart"))||[];
+    cart.push(item);
+    localStorage.setItem("cart",JSON.stringify(cart));
+   alert("Item added to cart");
+  }; 
+   return(
        <div >
          <div className="bg-gray-800 md:h-[50px] h-[40px] w-full flex flex-row">
           <h2 className="md:ml-[40px] ml-[10px] font-bold relative z-10  mt-[10px]">envato</h2><h2 className="relative z-10  mt-[10px]">market</h2>
@@ -33,12 +34,13 @@ export default function Land(){
                    <option value="/aboutus" className="text-black p-2">AboutUs</option>
                     <option value="/chef"className="text-black">Chef</option>
                       <option value="/login"className="text-black">Login</option>
+                      <option value="/cart"className="text-black">Cart</option>
                    </select></div>
                    <div className=" md:mt-[6px] ml-[10px] text-white  drop-shadow-lg relative z-10 hidden md:block mt-[50px]"onClick={()=>router.push("/menu")}>Menu </div>
          
              <div ><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className="relative z-10 md:ml-[90px] ml-30 md:mt-[4px] mt-[5px] md:h-15 h-9 md:w-150 w-30 0"/></div>
 
-          <div className=" text-white hidden md:block relative z-10 md:absolute top-23  md:ml-[900px]  mt-[50px]">Shop  </div>
+          <div className=" text-white hidden md:block relative z-10 md:absolute top-23  md:ml-[900px]  mt-[50px]"onClick={()=>router.push("/cart")}>Shop  </div>
           <div className="text-white  hidden md:block md:mt-[6px] relative z-10 md:ml-[350px] mt-[50px]" >Blog </div>
           <div className=" text-white hidden md:block md:mt-[6px] relative z-10  mt-[50px]">Contact  </div>
        
@@ -150,10 +152,14 @@ export default function Land(){
             <FoodCard
             key={index}
             title={element.title}
+            price={element.price}
             foodimg={element.image}
             description={element.description}
+
             buttontext={"Add to Cart"}
-            onBorrowClick={()=>addToCart(element)}
+            
+            onBorrowClick={()=>
+              addToCart(element)}
             />
           ))}
         
