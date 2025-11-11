@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { login, createAccount, logout, resetEmail } from "../core/auth";
+import { login, createAccount, resetEmail,logout } from "../core/auth";
 
 import { useState } from "react";
 import Footer from "../components/Footer";
@@ -26,7 +26,7 @@ export default function Login()
                               <img className="size-12 rounded-full mx-10  " src="https://tse1.mm.bing.net/th/id/OIP.JRBIv4WXa_jQW7MLYOe06wHaHa?pid=Api&P=0&h=180"onClick={()=>router.push("/cart")}/>
                               
                               </div>
-                              <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:block ">Reservation</div>
+                              <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:block "><h3 className="md:ml-18 md:mt-3">Reservation</h3></div>
                         </div>
                         <div className="relative bg-[url('https://i.pinimg.com/1200x/53/10/f2/5310f24f0f5ba2776ad6eb390fdd4fa9.jpg')] md:bg-cover md:bg-center bg-contain bg-no-repeat text-white text-center md:py-60 py-50 ">
             
@@ -36,7 +36,7 @@ export default function Login()
             
             
                   <div className="relative z-10 -mt-40">
-                    <h1 className="md:text-5xl text-4xl font-bold  ">Login Page</h1>
+                    <h1 className="md:text-6xl text-4xl font-bold font-[marcellus] ">Login Page</h1>
                     <p className="text-lg mt-5 font-semibold">
                       Home <span className="text-gray-300"></span> login
                     </p>
@@ -49,24 +49,24 @@ export default function Login()
                     
                 
                 
-                  <div className="md:ml-130 ml-10">  <h1 className="text-black text-3xl font-bold  md:mt-25 mt-90 ">WELCOME BACK</h1></div>
-                   <div className="md:-ml-63 ml-11"> <h6 className="text-gray-700  md:mt-38 mt-5 ">Enter your email and password</h6></div>
+                  <div className="md:ml-130 ml-10">  <h1 className="text-black text-3xl font-bold  md:mt-25 mt-90 font-[marcellus] ">WELCOME BACK</h1></div>
+                   <div className="md:-ml-63 ml-11"> <h6 className="text-gray-700  md:mt-38 mt-5  font-[lato]">Enter your email and password</h6></div>
                     <div className="flex flex-col md:-ml-56 ml-10">
                         <input className="md:w-90 w-70 h-13 bg-gray-300 text-black rounded-[5px] md:mt-50 mt-5 px-7 "type="email"placeholder="Email*" onChange={(e) => setEmail(e.target.value)}
                         />
                          <input className="md:w-90 w-70 h-13 bg-gray-300 text-black rounded-[5px] mt-5 items-center justify-center px-7 " type="password"placeholder="xxxxxx"onChange={(e)=>setPassword(e.target.value)}
                        />
-                        <button className="md:w-50 w-50 h-13 bg-gray-800 rounded-[5px] mt-5   justify-center items-center mx-20   hover:bg-[#7b4c2b]"onClick={async(event)=>{
+                        <button className="md:w-50 w-50 h-13 bg-gray-800 rounded-[5px] mt-5 text-white  justify-center items-center mx-20   hover:bg-[#7b4c2b]"onClick={async(event)=>{
                           console.log(email,password);
                           await login (email,password);
                         }}>Login
                       </button>
-                      <button className="md:w-50 w-70 h-13 bg-gray-800 rounded-[5px] mt-5   justify-center items-center mx-20  hover:bg-[#7b4c2b]"onClick={async(event)=>{
+                      <button className="md:w-50 w-70 h-13 bg-gray-800 rounded-[5px] mt-5 text-white  justify-center items-center mx-20  hover:bg-[#7b4c2b]"onClick={async(event)=>{
                           console.log(email,password);
                           await createAccount (email,password);
                         }}>Sign Up
                       </button>
-                      <button className="md:w-50 w-70 h-13 bg-gray-800 rounded-[5px] mt-5   justify-center items-center mx-20  hover:bg-[#7b4c2b]"onClick={async(event)=>{
+                      <button className="md:w-50 w-70 h-13 bg-gray-800 rounded-[5px] mt-5  text-white justify-center items-center mx-20  hover:bg-[#7b4c2b]"onClick={async(event)=>{
                           console.log(email,password);
                           await resetEmail(email,password);
                         }}>Send Reset Email

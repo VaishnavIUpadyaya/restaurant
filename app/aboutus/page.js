@@ -23,7 +23,7 @@ export default function AboutUs(){
                   <img className="size-12 rounded-full mx-10  " src="https://tse1.mm.bing.net/th/id/OIP.JRBIv4WXa_jQW7MLYOe06wHaHa?pid=Api&P=0&h=180"onClick={()=>router.push("/cart")}/>
                   
                   </div>
-                  <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:block">Reservation</div>
+                  <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:block"><h3 className="md:ml-18 md:mt-3">Reservation</h3></div>
             </div>
             <div className="relative bg-[url('https://i.pinimg.com/1200x/53/10/f2/5310f24f0f5ba2776ad6eb390fdd4fa9.jpg')] md:bg-cover md:bg-center bg-contain bg-no-repeat text-white text-center md:py-60 py-50 ">
 
@@ -33,14 +33,14 @@ export default function AboutUs(){
 
 
       <div className="relative z-10 -mt-40">
-        <h1 className="md:text-5xl text-4xl font-bold  ">About Us</h1>
+        <h1 className="md:text-6xl text-4xl font-bold font-[marcellus] ">About Us</h1>
         <p className="text-lg mt-5 font-semibold">
           Home <span className="text-gray-300"></span> about-us
         </p>
       </div>
     </div>
        
-       <div className="text-[#82704e] text-2xl text-center md:mt-[0px] mt-[-220px] bg-amber-50 dark:bg-amber-950"><div className="py-10" >
+       <div className="text-[#82704e] text-2xl text-center md:mt-[0px] mt-[-220px] bg-amber-50 dark:bg-amber-950"><div className="py-10 font-[marcellus]" >
   ---OUR TRUSTED 8K HAPPY PARTNER---
 </div>
 <div className="flex flex-row  md:overflow-x-auto md:space-x-8 md:p-6 p-3 scrollbar-hide bg-contain">
@@ -86,7 +86,7 @@ export default function AboutUs(){
       <span className="mr-2">ABOUT US</span>
       <span className="w-16 h-[1px] bg-[#82704e] inline-block"></span>
     </h3>
-    <h1 className="md:text-5xl text-4xl font-bold leading-tight text-black dark:text-white">
+    <h1 className="md:text-5xl text-4xl font-bold leading-tight text-black dark:text-white font-[marcellus]">
       We Invite You To Visit Our Restaurant
     </h1>
     <p className="text-gray-600 dark:text-gray-100 text-lg">
@@ -94,7 +94,7 @@ export default function AboutUs(){
 
 
     </p>
-    <button className="mt-4 bg-[#82704e] text-white px-6 py-3  hover:bg-[black] transition">
+    <button className="mt-4 bg-[#82704e] text-white px-6 py-3  hover:bg-[black] transition font-[lato]">
       Discover More
     </button>
   </div>
@@ -112,109 +112,13 @@ export default function AboutUs(){
       </div>   
  
 </div>
-<div className="relative z-10 md:mt-0 mt-150 "><Footer/></div>
+
 
  </div>
 
   
-<div className="bg-gray-300 dark:bg-zinc-800 md:h-160">
-<div className="text-[#82704e] font-bold text-2xl md:mx-110 mx-5 pt-20 ">
-  ---MASTER CHEFS---
-</div>
-<div className="text-black dark:text-white font-bold text-4xl md:mx-80 mx-2 md:mt-[0px] mt-5 ">
-  MEET OUR SPECIAL CHEFS
-</div>
-<div className=" py-20 flex justify-center">
-      <div className="flex flex-wrap justify-center gap-16">
-        
-        
-        <div className="relative flex flex-col items-center">
-        
-          <div className="relative w-72 h-72 rounded-full border-[3px]  border-[#7b6749] overflow-hidden  ">
-            <img
-              src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F1.jpg&w=640&q=75"
-              alt="Chef"
-              className="object-cover w-full h-full"
-            />
-          </div>
 
-          
-          <div className="absolute bottom-[-35px] bg-[#7b6749] text-white px-10 py-3 text-center text-lg font-semibold clip-ribbon">
-            <p className="text-xl">Alexander Petllo</p>
-            <p className="text-sm font-normal tracking-wide">
-              ASSISTANT CHEF
-            </p>
-          </div>
-        </div>
-
-       
-        <div className="relative flex flex-col items-center">
-         
-          <div className="relative w-72 h-72 rounded-full border-[3px] border-[#7b6749] overflow-hidden">
-            <img
-              src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F2.jpg&w=640&q=75"
-              alt="Chef"
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <div className="absolute bottom-[-35px] bg-[#7b6749] text-white px-10 py-3 text-center text-lg font-semibold clip-ribbon">
-            <p className="text-xl">Mendia Juxef</p>
-            <p className="text-sm font-normal tracking-wide">
-              BURGER KING
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-</div>
-<div className="relative ">
- 
-  <div className="text-gray-300 text-8xl md:mt-30  md:mx-30">RESTAN</div>
-
- 
-  <div className="md:flex flex-row flex-col items-start md:justify-self-start relative">
- 
-    
-    <iframe width="560" height="315"className="md:w-[500px] w-full  h-[300px] object-cover  md:mx-10 md:mt-0 mt-10 rounded-lg" src="https://www.youtube.com/embed/F3zw1Gvn4Mk?si=0ftxkCNJCcWesXoS" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" ></iframe>
-
-   
-    <div className="absolute md:top-[-6rem]  md:left-133  bg-white dark:bg-zinc-900 shadow-lg  md:w-130 w-full px-4 md:px-10 md:py-10 py-2 ">
-      <h3 className="text-4xl font-bold dark:text-white text-gray-800 mb-2 md:mt-5 mt-20">
-        Our Story
-      </h3>
-    
-      <p className="my-4 text-gray-600dark:text-gray-300 text-lg">
-        A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center..
-      </p>
-      <div>
-        <ol >
-          <li className="flex items-start mb-2 text-[20px] text-black dark:text-[#7b6749] text-bold ">Sunday to Tuesday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   10:00 - 09:00</li>
-                                              
- <li className="flex items-start mb-2 text-[20px] text-black dark:text-[#7b6749] text-bold">Wednesday to Thursday:&nbsp;
-11:30 - 10:30</li>
-<li className="flex items-start mb-2 text-[20px] text-black dark:text-[#7b6749] text-bold">Friday & Saturday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-10:30 - 12:00</li>
-        </ol>
-
-      </div>
-      <div className="flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4 ...">
-  <img className="mx-auto block h-24 rounded-full sm:mx-0 sm:shrink-0" src="https://tse1.mm.bing.net/th/id/OIP.dRLdfGBeZTZkhsVOumBI-gAAAA?pid=Api&P=0&h=180" alt="" />
-  <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-0.5">
-      <p className="text-lg font-semibold text-[#7b6749] dark:text-amber-100">Call Anytime</p>
-      <p className="text-2xl font-bold italic dark:text-white text-gray-900">+964733-378901</p>
-    </div>
-    
-  </div>
-</div>
-    </div>
-      </div>   
- 
-</div>
-<div className=" bg-gray-900 py-10 md:mt-30 mt-180  md:flex justify-between flex-col px-20 md:items-center ">
-<img className="md:w-40 w-full "src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"/>
- </div>
+<div><Footer/></div>
  </div>
 
     )

@@ -5,23 +5,17 @@ export default function Menu(){
     const router=useRouter();
      return(
         <div className=" bg-gray-100 dark:bg-zinc-900 ">
-
-            <div className="flex flex-row items-center px-30 py-10 border-b-gray-600 border-b-1  justify-between bg-black">
-               
-                <img className=" w-28 mr-8" src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"/>
-                <div className="md:flex flex-row font-bold text-lg px-8 space-x-10 hidden md:block text-white">
+          <div className="flex flex-row items-center px-30 py-10 border-b-gray-600 border-b-1  justify-between bg-black">
+              <img className=" w-28 mr-8" src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"/>
+                <div className=" md:flex flex-row font-bold text-lg px-8 space-x-10 hidden md:block text-white">
                   <div onClick={()=>router.push("/")}>Home</div>
                   <div>Pages</div>
                   <div>Menu</div>
                   <div>Blog</div>
                   <div onClick={()=>router.push("/cart")}>Shop</div>
                   <img className="size-12 rounded-full mx-10  " src="https://tse1.mm.bing.net/th/id/OIP.JRBIv4WXa_jQW7MLYOe06wHaHa?pid=Api&P=0&h=180"onClick={()=>router.push("/cart")}/>
-                  
-                  </div>
-
-                
-                  <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:block text-white">Reservation</div>
-
+                 </div>
+         <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:block text-white"><h3 className="md:ml-18 md:mt-3">Reservation</h3></div>
         </div>
         <div className="relative bg-[url('https://i.pinimg.com/1200x/53/10/f2/5310f24f0f5ba2776ad6eb390fdd4fa9.jpg')] md:bg-cover md:bg-center bg-contain bg-no-repeat text-white text-center py-60  ">
      
@@ -29,7 +23,7 @@ export default function Menu(){
 
       
       <div className="relative z-10 md:-mt-40 -mt-45">
-        <h1 className="md:text-5xl text-4xl font-bold  ">Food Menu</h1>
+        <h1 className="md:text-6xl text-4xl font-bold font-[marcellus] ">Food Menu</h1>
         <p className="text-lg mt-5 font-semibold">
           Home <span className="text-gray-300"></span> Menu
         </p>
@@ -155,10 +149,7 @@ export default function Menu(){
           src="https://i.pinimg.com/1200x/04/6f/11/046f1140c8d118c0539c5faadd41a782.jpg" className="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div >
-
-        
-
-          <h3 className="text-xl font-bold text-black md:mt-0 mt-85 dark:text-white">Brownies</h3>
+     <h3 className="text-xl font-bold text-black md:mt-0 mt-85 dark:text-white">Brownies</h3>
           <p className="text-gray-600 dark:text-gray-100  ">Ricotta / Goat Cheese / Beetroot</p>
 
           <p className="text-gray-400 text-sm ">Extra Free Drinks</p>
@@ -260,9 +251,9 @@ export default function Menu(){
 </div>
 <div className="md:flex flex-row flex-col">
 <div className="md:w-1/2 w-full md:px-10 px-5 py-40 ">
-   <div className="text-[#7b6749] text-[30px] md:pl-30 pl-10 md:mt-0 -mt-15">Fresh From Ocean</div>
+   <div className="text-[#7b6749] text-[30px] md:pl-30 pl-10 md:mt-0 -mt-15 font-[lato]">Fresh From Ocean</div>
 
-   <div className="text-black mb-10 text-[44px] md:pl-37 pl-18 dark:text-white">Sea Food</div>
+   <div className="text-black mb-10 text-[44px] md:pl-37 pl-18 dark:text-white font-[marcellus]">Sea Food</div>
     <div className="flex  space-x-2 mb-6 md:mx-145 mx-45">
       <div className="border border-gray-400 px-4 py-1 text-black dark:text-white">Half</div>
       <div className="border border-gray-400 px-4 py-1 text-black dark:text-white">Full</div>
@@ -355,9 +346,9 @@ export default function Menu(){
   </div>
  
   <div className="md:w-1/2 w-full md:px-10 px-5 py-40 ">
-   <div className="text-[#7b6749] text-[30px] md:pl-30 pl-10 md:mt-0 -mt-65">DRINKS & WINE</div>
+   <div className="text-[#7b6749] text-[30px] md:pl-30 pl-10 md:mt-0 -mt-65 font-[lato]">DRINKS & WINE</div>
 
-   <div className="text-black mb-10 text-[44px] md:pl-37 pl-16 dark:text-white">Beverage</div>
+   <div className="text-black mb-10 text-[44px] md:pl-37 pl-16 dark:text-white font-[marcellus]">Beverage</div>
     <div className="flex  space-x-2 mb-6 md:mx-140 mx-45">
       <div className="border border-gray-400 px-4 py-1 text-black dark:text-white">Half</div>
       <div className="border border-gray-400 px-4 py-1 text-black dark:text-white">Full</div>
@@ -450,8 +441,8 @@ export default function Menu(){
 
   
   <div className="bg-gray-200 md:py-20 py-10 md:mt-0 -mt-18 dark:bg-zinc-800">
-    <div className="text-[#82704e] text-2xl font-bold text-center dark:text-amber-100 ">HAPPY CUSTOMERS</div>
-  <div className="text-black text-4xl font-bold text-center mt-5 dark:text-white">Our Customers Feedback</div>
+    <div className="text-[#82704e] text-2xl font-bold text-center dark:text-amber-100 font-[lato] ">HAPPY CUSTOMERS</div>
+  <div className="text-black text-4xl font-bold text-center mt-5 dark:text-white font-[marcellus]">Our Customers Feedback</div>
 
   <div className="md:flex flex-row flex-col">
     <div >
@@ -460,13 +451,13 @@ export default function Menu(){
     <div className="md:w-1/2 w-full">
 
 <div className="text-gray-400 text-[30px] mx-20  mt-20">5/5</div>
-<div className="text-black text-3xl font-bold md:mx-20 mx-18 dark:text-white">Best Food Ever</div>
+<div className="text-black text-3xl font-bold md:mx-20 mx-18 dark:text-white font-[marcellus]">Best Food Ever</div>
 <div className="text-gray-500 md:text-2xl text-xl md:mx-20 mx-10 leading-normal">"Targeting consultation discover apartments,ndulgence off under folly death wrote cause her way spite.Plan upon yet way get cold spot its week.Almost do am or limits hearts,Resolve parties but why she shewing."</div>
-<div className="text-black md:text-3xl text-2xl  mx-20 font-bold mt-10 dark:text-white">Matthew J. Wyman</div>
+<div className="text-black md:text-3xl text-2xl  mx-20 font-bold mt-10 dark:text-white font-[marcellus]">Matthew J. Wyman</div>
 
 
 
-<div className="text-[#82704e] md:text-2xl  md:mx-20 mx-25 mt-3 font-bold">SENIOR CONSULTANT</div>
+<div className="text-[#82704e] md:text-2xl  md:mx-20 mx-25 mt-3 font-bold font-[lato]">SENIOR CONSULTANT</div>
     </div>
   </div>
   </div>
@@ -476,8 +467,8 @@ export default function Menu(){
 
   
   <div className="relative ">
-   <div> <h1 className="text-2xl font-bold font-serif w-1/2 mt-10 md:py-0 py-15">RESERVATION</h1>
-    <div className="md:text-6xl text-4xl font-extrabold font-serif md:w-1/2 w-full md:mt-0 -mt-10">Reserve your favorite private table</div>
+   <div> <h1 className="text-2xl font-bold font-[marcellus] w-1/2 mt-10 md:py-0 py-15">RESERVATION</h1>
+    <div className="md:text-6xl text-4xl font-extrabold font-[lato] md:w-1/2 w-full md:mt-0 -mt-10">Reserve your favorite private table</div>
     <p className="text-[18px] mt-5  md:w-1/2 w-full text-gray-300">
 A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.    </p>
     <div className="mt-10  font-bold md:font-3xl  ">
@@ -488,7 +479,7 @@ A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio 
 <div className="md:w-1/2 w-full relative z-10 md:ml-0 -ml-5">
 <div className="md:flex justify-items-normal md:w-[400px] w-full ">
   <form className="bg-gray-400 md:mt-20 mt-10 rounded-2xl md:p-8 p-4  ">
-    <h2 className="text-2xl font-bold text-center mb-6 text-black">
+    <h2 className="text-2xl font-bold text-center mb-6 text-black font-[marcellus]">
       Book Your Table
     </h2>
 
@@ -544,8 +535,4 @@ A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio 
 </div>
 
 <div><Footer/></div>
-
-
-
-
-    </div>)}
+ </div>)}

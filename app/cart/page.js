@@ -29,7 +29,7 @@ const removeItem =(index)=>{
                   <img className="size-12 rounded-full mx-10  " src="https://tse1.mm.bing.net/th/id/OIP.JRBIv4WXa_jQW7MLYOe06wHaHa?pid=Api&P=0&h=180"/>
                   
                   </div>
- <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  bg-white text-black transition hidden md:bloc">Reservation</div>
+ <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold   text-white transition hidden md:block "><h3 className="md:ml-18 md:mt-3">Reservation</h3></div>
 
 
         </div>
@@ -39,7 +39,7 @@ const removeItem =(index)=>{
 
       
       <div className="relative z-10 md:-mt-40 -mt-45">
-        <h1 className="md:text-5xl text-4xl font-bold  ">Cart Page</h1>
+        <h1 className="md:text-6xl text-4xl font-bold font-[marcellus] ">Cart Page</h1>
         <p className="text-lg md:mt-5 mt-3 font-semibold">
           Home <span className="text-gray-300">›</span> Cart
         </p>

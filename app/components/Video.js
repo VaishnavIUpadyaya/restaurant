@@ -7,7 +7,7 @@
   <div className="md:flex flex-row flex-col md:mt-20 items-start justify-self-start relative bg-white w-full dark:bg-black">
  
     <div className="absolute md:mt-[100px] mt-130 md:left-180 bg-white shadow-lg  md:w-140 w-full md:px-10 px-3 py-10 dark:bg-black ">
-      <h3 className="text-4xl font-bold text-gray-800 mb-2 mt-5 dark:text-white ">
+      <h3 className="text-4xl font-bold text-gray-800 mb-2 mt-5 dark:text-white font-[marcellus] ">
         Opening Hours
       </h3>
     
@@ -16,11 +16,11 @@
       </p>
       <div>
         <ol >
-          <li className="flex items-start mb-2 text-[20px] text-black text-bold dark:text-[#7b6749]">Sunday to Tuesday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   10:00 - 09:00</li>
+          <li className="flex items-start mb-2 text-[20px] text-black text-bold dark:text-[#7b6749] font-[lato]">Sunday to Tuesday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   10:00 - 09:00</li>
                                               
- <li className="flex items-start mb-2 text-[20px] text-black text-bold dark:text-[#7b6749]">Wednesday to Thursday:&nbsp;
+ <li className="flex items-start mb-2 text-[20px] text-black text-bold dark:text-[#7b6749] font-[lato]">Wednesday to Thursday:&nbsp;
 11:30 - 10:30</li>
-<li className="flex items-start mb-2 text-[20px] text-black text-bold dark:text-[#7b6749]">Friday & Saturday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<li className="flex items-start mb-2 text-[20px] text-black text-bold dark:text-[#7b6749] font-[lato]">Friday & Saturday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 10:30 - 12:00</li>
         </ol>
 
