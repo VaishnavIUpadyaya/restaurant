@@ -2,27 +2,13 @@
 import { useRouter } from "next/navigation";
 
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export default function Chef(){
     const router=useRouter();
     return(
         <div className=" bg-gray-100 dark:bg-gray-600">
-         <div className="flex flex-row md:items-center px-30 py-10 border-b-gray-600 border-b-1  md:justify-between bg-black">
-               
-                <img className=" md:w-28 w-24 mr-8" src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"/>
-                <div className="md:flex flex-row font-bold text-lg px-8 space-x-10 hidden md:block text-white">
-                  <div onClick={()=>router.push("/")}>Home</div>
-                  <div>Pages</div>
-                  <div onClick={()=>router.push("/menu")}>Menu</div>
-                  <div>Blog</div>
-                  <div onClick={()=>router.push("/cart")}>Shop</div>
-                  <img className="size-12 rounded-full mx-10  " src="https://tse1.mm.bing.net/th/id/OIP.JRBIv4WXa_jQW7MLYOe06wHaHa?pid=Api&P=0&h=180"onClick={()=>router.push("/cart")}/>
-                  
-                  </div>
-                                    <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:block text-white"><h3 className="md:ml-18 md:mt-3">Reservation</h3></div>
-
-
-        </div>
+       <div><Navbar/></div>
         <div className="relative bg-[url('https://i.pinimg.com/1200x/53/10/f2/5310f24f0f5ba2776ad6eb390fdd4fa9.jpg')] md:bg-cover bg-contain bg-no-repeat md:bg-center text-white text-center py-60  ">
      
         <div className="md:absolute inset-0 md:bg-black/60"></div>

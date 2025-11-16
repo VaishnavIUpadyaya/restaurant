@@ -1,6 +1,7 @@
 "use client";
   import { useRouter } from "next/navigation";
   export default function Master(){
+    const router=useRouter();
     return(
 <div className="dark:bg-black w-full">
      <div className="text-[#82704e] font-bold text-2xl md:mt-0 mt-165 md:mx-160 mx-13 pt-20 font-[lato] ">

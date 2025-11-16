@@ -4,6 +4,7 @@ import { login, createAccount, resetEmail,logout } from "../core/auth";
 
 import { useState } from "react";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 export default function Login()
 {const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,20 +15,7 @@ export default function Login()
                     <div className=" bg-gray-100 dark:bg-gray-600 dark:bg-black w-full">
             
                     <div className=" bg-gray-100 dark:bg-gray-600 ">
-                        <div className="flex flex-row md:items-center px-30 md:py-10 py-5 border-b-gray-600 border-b-1  md:justify-between bg-black text-white  md:w-full ">
-                           
-                            <img className=" md:w-28 w-24 mr-8 " src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"/>
-                            <div className="md:flex flex-row hidden md:block font-bold text-lg px-8 space-x-10  ">
-                              <div onClick={()=>router.push("/")} >Home</div>
-                              <div>Pages</div>
-                              <div onClick={()=>router.push("/menu")}>Menu</div>
-                              <div>Blog</div>
-                              <div onClick={()=>router.push("/cart")}>Shop</div>
-                              <img className="size-12 rounded-full mx-10  " src="https://tse1.mm.bing.net/th/id/OIP.JRBIv4WXa_jQW7MLYOe06wHaHa?pid=Api&P=0&h=180"onClick={()=>router.push("/cart")}/>
-                              
-                              </div>
-                              <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:block "><h3 className="md:ml-18 md:mt-3">Reservation</h3></div>
-                        </div>
+                      <div><Navbar/></div>
                         <div className="relative bg-[url('https://i.pinimg.com/1200x/53/10/f2/5310f24f0f5ba2776ad6eb390fdd4fa9.jpg')] md:bg-cover md:bg-center bg-contain bg-no-repeat text-white text-center md:py-60 py-50 ">
             
                  
