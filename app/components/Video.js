@@ -1,9 +1,10 @@
 "use client";
   import { useRouter } from "next/navigation";
   export default function Video(){
+    const router=useRouter();
     return(
 <div >
-    <div className="relative ">
+    <div >
   <div className="md:flex flex-row flex-col md:mt-20 items-start justify-self-start relative bg-white w-full dark:bg-black">
  
     <div className="absolute md:mt-[100px] mt-130 md:left-180 bg-white shadow-lg  md:w-140 w-full md:px-10 px-3 py-10 dark:bg-black ">

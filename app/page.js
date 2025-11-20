@@ -6,6 +6,8 @@ import { food } from "./items";
 import Footer from "./components/Footer";
 import Master from "./components/Master";
 import About from "./components/About";
+import Book from "./components/Book";
+import Video from "./components/Video";
 export default function Land(){
   const router=useRouter();
   const handleChange=(e)=>{const selected=e.target.value; if(selected){router.push(selected);}};
@@ -45,7 +47,7 @@ export default function Land(){
 
           <div className=" text-white hidden md:block relative z-10 md:absolute top-0  md:ml-[900px]  mt-3"onClick={()=>router.push("/cart")}>Shop  </div>
           <div className="text-white  hidden md:block md:mt-4 relative z-10 md:ml-[350px] mt-4" onClick={()=>router.push("/blog")} >Blog </div>
-          <div className=" text-white hidden md:block md:mt-4 relative z-10  mt-3">Contact  </div>
+          <div className=" text-white hidden md:block md:mt-4 relative z-10  mt-3" onClick={()=>router.push("/contactus")}>Contact  </div>
        
           </div>     
   <div className=" absolute inset-0 bg-black/40 flex items-center justify-center"></div>
@@ -62,29 +64,7 @@ export default function Land(){
              
        
         <div className="md:flex flex-row flex-col">
-         <div className="h-130 md:mt-0 mt-10 rounded-[40px] flex flex-col bg-white md:border-2 md:border-black md:ml-[100px]  md:w-[400px] w-full  relative z-10 p-2 " >
-      
-          <h1  className="text-black font-bold ml-[60px] md:text-3xl text-2xl md:mt-22 mt-18 font-[marcellus]">Book a Table</h1>
-    
-                      <div className=" bg-white w-65 rounded-[5px] h-11 items-center border-2 border-gray-300 ml-[60px] mt-6 " >
-                  <h2 className="mt-[7px] ml-[20px] text-gray-400 ">Phone</h2></div>
-            
-            
-               <div htmlFor="people" className=" ml-[60px]  mt-5 bg-white w-65 rounded-[5px] h-11  border-2 border-gray-300  text-gray-600 ">
-                 <select id="people" className="ml-[20px] mt-[7px] pr-35"defaultValue="3 person">
-                  <option value=" 1 Person space-x-10">1 Person</option>
-                      <option value="2 Person">2 Person</option>
-                          <option value="3 Person">3 Person</option>
-                              <option value="4 Person">4 Person</option>
-                                  <option value="5 Person">5 Person</option>
-                 </select>
-                 </div>
-                  <div className=" ml-[60px]  mt-[17px] bg-white w-65 rounded-[5px] h-11  border-2 border-gray-300  text-gray-600 "><h2 className="ml-[20px] mt-[7px]">Date</h2></div>  
-                  
-                  <div  className=" ml-[60px]  mt-[17px] bg-white w-65 rounded-[5px] h-11  border-2 border-gray-300  text-gray-600 "><h2 className="ml-[20px] mt-[7px]">12:00pm</h2></div>  
-                   <div  className=" ml-[60px]  mt-7 bg-[#7b4c2b] hover:bg-black w-[180px] rounded-[10px] border-2 border-gray-300  text-white "> <h2 className="ml-[20px] mt-[10px]  h-[40px] font-[lato] ">Book A Table</h2>
-                        </div>
-                        </div> 
+        <div><Book/></div>
                            
                    <div className="md:flex flex-row flex-col">
                    <div > <h1 className="text-black text-3xl font-bold md:ml-100 ml-10 w-full absolute md:mt-60 -mt-25 dark:text-white font-[marcellus]">Our Popular Menu</h1></div>  
@@ -121,9 +101,9 @@ export default function Land(){
              <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F1.png&w=1080&q=75"className="h-[200px] w-[200px] md:mt-[400px] mt-99 md:ml-[20px] hidden md:block"/>
               <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F12.png&w=1080&q=75"className="h-[150px] w-[150px] md:mt-[650px] mt-100 flex flex-col absolute ml-[40px] hidden md:block"/>
              <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F15.png&w=1080&q=75"className="h-[250px] w-[250px] md:mt-[480px] mt-370 "/>
-       <div> <h2 className="flex flex-row text-black md:mt-[450px] mt-15 md:ml-[90px] -ml-7 text-2xl font-bold ">Today Special Offer</h2>
+       <div> <h2 className="flex flex-row text-black md:mt-[450px] mt-15 md:ml-[90px] -ml-7 text-2xl font-bold dark:text-white">Today Special Offer</h2>
            <h1 className="flex flex-row text-black mt-[30px] md:ml-[90px] -ml-7 text-4xl font-bold font-[marcellus] ">Explore Irresistible<br></br> Promotions!</h1>
-           <h6 className="text-black mt-[20px] md:ml-[90px] -ml-7">Contrasted dissimilar get joy you instrument out reasonably. Again keeps<br></br> at no meant stuff. To perpetual do existence northward as difficult<br></br> preserved daughters. Continued at up to zealously necessary.
+           <h6 className="text-black mt-[20px] md:ml-[90px] -ml-7 ">Contrasted dissimilar get joy you instrument out reasonably. Again keeps<br></br> at no meant stuff. To perpetual do existence northward as difficult<br></br> preserved daughters. Continued at up to zealously necessary.
          </h6>
            <div className=" md:ml-[90px] mt-[30px] relative z-10"><h2 className="bg-[#7b4c2b] hover:bg-[#4b2a14] text-white w-[90px] h-[50px] w-[150px] rounded-[30px]  flex items-center justify-center">Order Today </h2></div> 
          </div>
@@ -164,17 +144,8 @@ export default function Land(){
               addToCart(element)}
             />
           ))}
-        
-           
-           
-            </div> 
-         
-          
-           
-           
-             
-           
-                <div className="md:h-[600px] h-220  rounded-[40px]  bg-black  md:flex flex-row flex-col md:w-[1160px] w-full md:px-0 px-2 md:ml-[100px] md:mt-20" >
+        </div> 
+           <div className="md:h-[600px] h-220  rounded-[40px]  bg-black  md:flex flex-row flex-col md:w-[1160px] w-full md:px-0 px-2 md:ml-[100px] md:mt-20" >
                     <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F16.png&w=2048&q=75" className="md:h-[450px] md:w-[400px] h-100 w-60 md:ml-[80px] ml-15 md:mt-[80px] md:py-0 py-20"/>
                   <div className="flex flex-col">
                      <h1 className="text-white md:ml-[60px] ml-5 md:mt-[180px] md:mt-20 mt-3 font-bold md:ml-40 md:text-5xl text-3xl font-[marcellus]">Are you Ready to Start<br></br> your online Order?</h1>
@@ -184,49 +155,7 @@ export default function Land(){
                 </div>  
            
        </div>  
-<div className="relative ">
- 
-
-
- 
-  <div className="md:flex flex-row flex-col items-start justify-self-start relative bg-white">
- 
-    <div className="absolute md:mt-[100px] mt-130 md:left-180 bg-white shadow-lg  md:w-140 w-full md:px-10 px-3 py-10 ">
-      <h3 className="text-4xl font-bold text-gray-800 mb-2 mt-5 font-[marcellus] ">
-        Opening Hours
-      </h3>
-    
-      <p className="my-4 md:w-100 w-85 text-gray-600">
-        A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center..
-      </p>
-      <div>
-        <ol >
-          <li className="flex items-start mb-2 text-[20px] text-black text-bold font-[lato]">Sunday to Tuesday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   10:00 - 09:00</li>
-                                              
- <li className="flex items-start mb-2 text-[20px] text-black text-bold font-[lato]">Wednesday to Thursday:&nbsp;
-11:30 - 10:30</li>
-<li className="flex items-start mb-2 text-[20px] text-black text-bold font-[lato]">Friday & Saturday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-10:30 - 12:00</li>
-        </ol>
-
-      </div>
-      <div className="flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4 ...">
-  <img className="mx-auto block h-24 rounded-full sm:mx-0 sm:shrink-0" src="https://tse1.mm.bing.net/th/id/OIP.dRLdfGBeZTZkhsVOumBI-gAAAA?pid=Api&P=0&h=180"  />
-  <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-0.5">
-      <p className="text-lg font-semibold text-[#7b6749]">Call Anytime</p>
-      <p className="text-2xl font-bold italic text-gray-900">+964733-378901</p>
-    </div>
-    
-  </div>
-</div>
-    </div>
-    
-    <iframe width="560" height="315"className="md:w-[700px] w-90 h-[450px] object-cover mx-10 rounded-lg md:ml-[90px] ml-2  md:px-0 px-4 md:mt-[200px] mt-20" src="https://www.youtube.com/embed/F3zw1Gvn4Mk?si=0ftxkCNJCcWesXoS" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" ></iframe>
-<div><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F4.png&w=3840&q=75" className=" h-[250px] w-[500px] mt-[550px] hidden md:block"/></div>
-   
-  </div>
-</div>
+<div><Video/></div>
     <div><Master/></div>
 <div className="md:flex flex-row flex-col">
   <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=1920&q=75"className="h-[350px] md:w-[550px] w-100 md:px-0 px-5 md:ml-50 mt-[50px]" /> 

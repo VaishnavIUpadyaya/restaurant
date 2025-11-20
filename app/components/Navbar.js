@@ -9,10 +9,11 @@
                 <img className=" md:w-28 w-24 mr-8 " src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"/>
                 <div className="md:flex flex-row hidden md:block font-bold text-lg px-8 space-x-10  ">
                   <div onClick={()=>router.push("/")} >Home</div>
-                  <div>Pages</div>
+                  <div onClick={()=>router.push("/")}>Pages</div>
                   <div onClick={()=>router.push("/menu")}>Menu</div>
-                  <div>Blog</div>
+                  <div onClick={()=>router.push("/blog")}>Blog</div>
                   <div onClick={()=>router.push("/cart")}>Shop</div>
+                   <div onClick={()=>router.push("/contactus")}>ContactUs</div>
                   <img className="size-12 rounded-full mx-10  " src="https://tse1.mm.bing.net/th/id/OIP.JRBIv4WXa_jQW7MLYOe06wHaHa?pid=Api&P=0&h=180"onClick={()=>router.push("/cart")}/>
                   
                   </div>

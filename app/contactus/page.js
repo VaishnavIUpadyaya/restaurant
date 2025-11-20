@@ -22,36 +22,36 @@ export default function Contactus(){
 
         </div>
          <div className="flex flex-col  h-[500px]">
-            <div className="  md:mt-[500px] mt-240  md:flex flex-row flex-col  md:mt-0 mt-5">
-       <div> <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fphone.png&w=640&q=75"className="h-[90px] w-[100px] md:ml-[100px] ml-20"/><h2 className="flex flex-col text-black md:ml-[110px] text-2xl mt-[25px] ml-20 font-bold dark:text-white">Hotline</h2><h4 className="text-black md:ml-[110px] ml-20 dark:text-white">+4733378901 </h4></div> 
-        <div> <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fplaceholder.png&w=640&q=75"className="h-[90px] w-[100px] md:ml-[100px] ml-20 md:mt-0 mt-10"/><h2 className="flex flex-col text-black md:ml-[110px] text-2xl md:mt-[25px] mt-5 ml-20 font-bold dark:text-white">Our Location</h2><h4 className="text-gray-500 md:ml-[110px] ml-20 dark:text-white">55 Main Street,The <br></br>Grand Avenue 2nd Block,<br></br>New York City</h4></div> 
-          <div>  <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Femail.png&w=640&q=75"className="h-[90px] w-[100px] md:ml-[100px] ml-20  md:mt-0 mt-10"/><h2 className="flex flex-col text-black md:ml-[110px] text-2xl md:mt-[25px] mt-5 ml-20 font-bold dark:text-white">Official Email</h2><h4 className="text-black md:ml-[110px] ml-20 dark:text-white">info@restan.com </h4></div> 
+            <div className="  md:mt-40 md:flex flex-row flex-col  ">
+       <div> <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fphone.png&w=640&q=75"className="h-[90px] w-[100px] md:ml-90"/><h2 className="flex flex-col text-black md:ml-90 text-2xl mt-[25px] ml-20 font-bold dark:text-white">Hotline</h2><h4 className="text-black md:ml-90 ml-20 dark:text-white">+4733378901 </h4></div> 
+        <div> <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fplaceholder.png&w=640&q=75"className="h-[90px] w-[100px] md:ml-50 ml-20 md:mt-0 mt-10"/><h2 className="flex flex-col text-black md:ml-50 text-2xl md:mt-[25px] mt-5 ml-20 font-bold dark:text-white">Our Location</h2><h4 className="text-gray-500 md:ml-50 ml-20 dark:text-white">55 Main Street,The <br></br>Grand Avenue 2nd Block,<br></br>New York City</h4></div> 
+          <div>  <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Femail.png&w=640&q=75"className="h-[90px] w-[100px] md:ml-50 ml-20  md:mt-0 mt-10"/><h2 className="flex flex-col text-black md:ml-50 text-2xl md:mt-[25px] mt-5 ml-20 font-bold dark:text-white">Official Email</h2><h4 className="text-gray-500 md:ml-50 ml-20 dark:text-white">info@restan.com </h4></div> 
           </div>
          <div>
           
          </div>
           </div>
-          <div>
-            <div className="text-[#82704e] font-bold font-[marcellus] text-2xl">
+          <div className="w-300 bg-white dark:bg-black h-150 border-1 border-black ml-40">
+            <div className="text-[#82704e] font-bold font-[marcellus] text-2xl md:ml-125 md:mt-5 ">
                 KEEP IN TOUCH
             </div>
-            <div className="font-bold text-5xl font-[lato]">Send us a Message</div>
-            <form>
-                <input type="text" placeholder=" Name" className="bg-gray-200 rounded-md p-3 mt-10 w-80 md:ml-0 ml-20 dark:bg-black dark:text-white text-gray-900"/><br></br>
-                <input type="email" placeholder=" Email" className="bg-gray-200 rounded-md p-3 mt-10 w-80 md:ml-0 ml-20 dark:bg-black dark:text-white text-gray-900"/>
-                <input type="text" placeholder=" Phno" className="bg-gray-200 rounded-md p-3 mt-10 w-80  md:ml-7 ml-20 dark:bg-black dark:text-white text-gray-900"/><br></br>
+            <div className="font-bold text-5xl font-[lato] md:mt-5 md:ml-100 ">Send us a Message</div>
+            <form >
+                <input type="text" placeholder=" Name" className="bg-gray-200 h-14 rounded-md p-3 mt-10 md:-py-10 w-200 md:ml-50 ml-20 dark:bg-gray-500 dark:bg-black  text-gray-900"/>
+                <input type="email" placeholder=" Email" className="bg-gray-200 h-14 rounded-md p-3  w-95 md:ml-50 ml-20 dark:bg-black dark:bg-gray-500   text-gray-900"/>
+                <input type="text" placeholder=" Phno" className="bg-gray-200 rounded-md h-14 p-3 mt-10 w-95  md:ml-10 ml-20 dark:bg-black  dark:bg-gray-500  text-gray-900"/>
                 <br></br>
-                <input type="text" placeholder=" Your Message" className="bg-gray-200 rounded-md p-3 mt-10 w-80 h-32 md:ml-0 ml-20 dark:bg-black dark:text-white text-gray-900"/><br></br>
-                <button className="bg-[#82704e] text-white font-bold px-6 py-3 mt-10 mb-20 rounded-md md:ml-0 ml-20 hover:bg-black font-[marcellus]">Get In Touch</button>
+                <input type="text" placeholder=" Your Message" className="bg-gray-200 rounded-md p-3 mt-10 w-200 h-32 md:ml-50 ml-20 dark:bg-black  text-gray-900 dark:bg-gray-500 "/><br></br>
+                <button className="bg-[#82704e] text-white font-bold px-6 py-3 mt-10 mb-20 rounded-md md:ml-50 ml-20 hover:bg-black font-[marcellus]">Get In Touch</button>
 
             </form>
           </div>
-          <div className="text-gray-300 text-8xl md:mt-0 -mt-15 md:mx-30 dark:bg-black w-full">RESTAN</div>
+          <div className="text-gray-300 text-8xl md:mt-10 md:ml-50 -mt-15   w-full">RESTAN</div>
           
            
-            <div className="md:flex flex-row flex-col items-start md:justify-self-start relative ">
+            <div className="md:flex flex-row flex-col md:mt-5 items-start md:justify-self-start relative ">
            
-              <div ><Video/></div>
+              <div className="md:-mt-20"><Video/></div>
              
                 </div>  
                 <div className="md:mt-25"><About/></div>
