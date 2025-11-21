@@ -20,17 +20,19 @@ export default function Land(){
   }; 
    return(
        <div >
-         <div className="bg-gray-800 md:h-[50px] h-[40px] w-full flex flex-row">
-          <h2 className="md:ml-[40px] ml-[10px] font-bold relative z-10  mt-[10px] text-white">envato</h2><h2 className="relative z-10  mt-[10px] text-white">market</h2>
-        <div className=" ml-[10px] relative z-10 md:mt-[10px] mt-[5px]"><h2 className="bg-green-700 w-[90px] h-[30px] md:ml-[1100px] ml-[160px] flex justify-center items-center">Buy now </h2></div>  
+         <div className="bg-gray-800  md:h-[50px] h-[40px] w-full flex flex-row hidden md:block">
+          <h2 className="md:ml-[40px] ml-10 font-bold relative z-10  text-white ">envato</h2><h2 className="relative z-10  ml-25 -mt-6  text-white">market</h2>
+        <div className=" ml-[10px] relative z-10 -mt-3"><h2 className="bg-green-700 w-[90px] h-[30px] ml-300  flex justify-center items-center">Buy now </h2></div>  
          </div>
           <div className="flex flex-row bg-[#7b4c2b]">  <h2 className=" font-bold relative z-10 md:h-[35px] h-[20px] md:ml-[300px] ml-[20px] hidden md:block text-white  mt-[10px]">Phone:+4733378901</h2><h2 className="relative  hidden md:block z-10 md:ml-[300px] ml-[300px]font-bold  mt-[10px] text-white ">Email: food@restan.com</h2></div>
          
          
-          <div className=" md:h-screen h-[290px] flex flex-col  bg-no-repeat bg-center w-full md:bg-cover bg-contain " style={{backgroundImage:"url('https://restan-nextjs.vercel.app/assets/img/banner/14.jpg')"}} >
+          <div className=" md:h-screen h-[290px] flex flex-col  bg-no-repeat bg-center w-full md:bg-cover bg-contain bg-black" style={{backgroundImage:"url('https://restan-nextjs.vercel.app/assets/img/banner/14.jpg')"}} >
             
-         
+       
          <div className="fixed top-0 left-0  z-10 h-[50px] w-[160px]  mx-150px flex flex-row  ml-[2px] md:mt-30 md:space-x-20 space-x-3 md:font-bold font-[lato] md:text-xl" >
+        
+
           <div className=" md:mt-[6px] md:ml-[80px] ml-[10px] text-white hidden md:block drop-shadow-lg relative z-10  mt-[50px]">Home  </div>
          
            <div htmlFor="pages" className=" hidden md:block  text-white relative z-10 ">
@@ -42,15 +44,33 @@ export default function Land(){
                       <option value="/cart"className="text-black">Cart</option>
                    </select>
                    </div>
+               
                    <div className=" md:mt-[6px] ml-[10px] text-white  drop-shadow-lg relative z-10 hidden md:block mt-[50px]"onClick={()=>router.push("/menu")}>Menu </div>
          
-             <div ><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className="relative z-10 md:ml-[90px] ml-30 md:mt-[4px] mt-[5px] md:h-15 h-9  w-30 "/></div>
+             <div ><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className="relative z-10 md:ml-[90px] ml-30 md:mt-[4px] mt-[5px] md:h-15 h-8  w-28 "/></div>
+      <div className="md:hidden w-full text-right px-4">
+  <select
+    className="p-1 mt-2 ml-30 rounded bg-white text-black"
+    onChange={(e) => router.push(e.target.value)}
+  >
+    <option value="">Pages</option>
+    <option value="/">Home</option>
+    <option value="/aboutus">About Us</option>
+    <option value="/chef">Chef</option>
+    <option value="/menu">Menu</option>
+    <option value="/cart">Shop</option>
+    <option value="/blog">Blog</option>
+    <option value="/contactus">Contact</option>
+  </select>
+</div>
+
+
 
           <div className=" text-white hidden md:block relative z-10 md:absolute top-0  md:ml-[900px]  mt-3"onClick={()=>router.push("/cart")}>Shop  </div>
           <div className="text-white  hidden md:block md:mt-4 relative z-10 md:ml-[350px] mt-4" onClick={()=>router.push("/blog")} >Blog </div>
           <div className=" text-white hidden md:block md:mt-4 relative z-10  mt-3" onClick={()=>router.push("/contactus")}>Contact  </div>
        
-          </div>     
+             </div> 
   <div className=" absolute inset-0 bg-black/40 flex items-center justify-center"></div>
           <div className=" md:mt-[200px] mt-[60px] md:ml-[450px] ml-[80px] space-x-4 relative z-10 ">
            <h1 className=" font-bold  md:text-8xl text-3xl drop-shadow-lg text-white font-[marcellus]"> Best Restaurant</h1>  
