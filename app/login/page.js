@@ -44,17 +44,17 @@ export default function Login()
                         />
                          <input className="md:w-90 w-70 h-13 bg-gray-300 text-black rounded-[5px] mt-5 items-center justify-center px-7 " type="password"placeholder="xxxxxx"onChange={(e)=>setPassword(e.target.value)}
                        />
-                        <button className="md:w-50 w-50 h-13 bg-gray-800 rounded-[5px] mt-5 text-white  justify-center items-center mx-20   hover:bg-[#7b4c2b]"onClick={async(event)=>{
+                        <button className="md:w-50 w-40 h-13 bg-gray-800 rounded-[5px] mt-5 text-white  justify-center items-center md:mx-20  hover:bg-[#7b4c2b]"onClick={async(event)=>{
                           console.log(email,password);
                           await login (email,password);
                         }}>Login
                       </button>
-                      <button className="md:w-50 w-70 h-13 bg-gray-800 rounded-[5px] mt-5 text-white  justify-center items-center mx-20  hover:bg-[#7b4c2b]"onClick={async(event)=>{
+                      <button className="md:w-50 w-40 h-13 bg-gray-800 rounded-[5px] mt-5 text-white  justify-center items-center md:mx-20   hover:bg-[#7b4c2b]"onClick={async(event)=>{
                           console.log(email,password);
                           await createAccount (email,password);
                         }}>Sign Up
                       </button>
-                      <button className="md:w-50 w-70 h-13 bg-gray-800 rounded-[5px] mt-5  text-white justify-center items-center mx-20  hover:bg-[#7b4c2b]"onClick={async(event)=>{
+                      <button className="md:w-50 w-50 h-13 bg-gray-800 rounded-[5px] mt-5  text-white justify-center items-center md:mx-20 hover:bg-[#7b4c2b]"onClick={async(event)=>{
                           console.log(email,password);
                           await resetEmail(email,password);
                         }}>Send Reset Email
