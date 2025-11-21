@@ -47,8 +47,15 @@ export default function Land(){
                
                    <div className=" md:mt-[6px] ml-[10px] text-white  drop-shadow-lg relative z-10 hidden md:block mt-[50px]"onClick={()=>router.push("/menu")}>Menu </div>
          
-             <div ><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className="relative z-10 md:ml-[90px] ml-30 md:mt-[4px] mt-[5px] md:h-15 h-8  w-28 "/></div>
-      <div className="md:hidden w-full text-right px-4">
+             <div ><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className="relative z-10 md:ml-[90px] ml-30 md:mt-[4px] mt-[5px] md:h-15 h-7  w-18 "/></div>
+     
+
+
+
+          <div className=" text-white hidden md:block relative z-10 md:absolute top-0  md:ml-[900px]  mt-3"onClick={()=>router.push("/cart")}>Shop  </div>
+          <div className="text-white  hidden md:block md:mt-4 relative z-10 md:ml-[350px] mt-4" onClick={()=>router.push("/blog")} >Blog </div>
+          <div className=" text-white hidden md:block md:mt-4 relative z-10  mt-3" onClick={()=>router.push("/contactus")}>Contact  </div>
+        <div className="md:hidden w-full text-right px-4">
   <select
     className="p-1 mt-2 ml-30 rounded bg-white text-black"
     onChange={(e) => router.push(e.target.value)}
@@ -63,13 +70,6 @@ export default function Land(){
     <option value="/contactus">Contact</option>
   </select>
 </div>
-
-
-
-          <div className=" text-white hidden md:block relative z-10 md:absolute top-0  md:ml-[900px]  mt-3"onClick={()=>router.push("/cart")}>Shop  </div>
-          <div className="text-white  hidden md:block md:mt-4 relative z-10 md:ml-[350px] mt-4" onClick={()=>router.push("/blog")} >Blog </div>
-          <div className=" text-white hidden md:block md:mt-4 relative z-10  mt-3" onClick={()=>router.push("/contactus")}>Contact  </div>
-       
              </div> 
   <div className=" absolute inset-0 bg-black/40 flex items-center justify-center"></div>
           <div className=" md:mt-[200px] mt-[60px] md:ml-[450px] ml-[80px] space-x-4 relative z-10 ">
