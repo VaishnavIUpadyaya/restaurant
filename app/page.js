@@ -20,17 +20,14 @@ export default function Land(){
   }; 
    return(
        <div >
-         <div className="bg-gray-800  md:h-[50px] h-[40px] w-full flex flex-row hidden md:block">
-          <h2 className="md:ml-[40px] ml-10 font-bold relative z-10  text-white ">envato</h2><h2 className="relative z-10  ml-25 -mt-6  text-white">market</h2>
-        <div className=" ml-[10px] relative z-10 -mt-3"><h2 className="bg-green-700 w-[90px] h-[30px] ml-300  flex justify-center items-center">Buy now </h2></div>  
-         </div>
-          <div className="flex flex-row bg-[#7b4c2b]">  <h2 className=" font-bold relative z-10 md:h-[35px] h-[20px] md:ml-[300px] ml-[20px] hidden md:block text-white  mt-[10px]">Phone:+4733378901</h2><h2 className="relative  hidden md:block z-10 md:ml-[300px] ml-[300px]font-bold  mt-[10px] text-white ">Email: food@restan.com</h2></div>
+        
+       
          
          
-          <div className=" md:h-screen h-[290px] flex flex-col  bg-no-repeat bg-center w-full md:bg-cover bg-contain bg-black" style={{backgroundImage:"url('https://restan-nextjs.vercel.app/assets/img/banner/14.jpg')"}} >
+          <div className=" md:h-screen h-[290px] flex flex-col  bg-no-repeat bg-center w-full md:bg-cover  bg-black bg-contain" style={{backgroundImage:"url('https://restan-nextjs.vercel.app/assets/img/banner/14.jpg')"}} >
             
        
-         <div className="fixed top-0 left-0  z-10 h-[50px] w-[160px]  mx-150px flex flex-row  ml-[2px] md:mt-30 md:space-x-20 space-x-3 md:font-bold font-[lato] md:text-xl" >
+         <div className="fixed top-0 left-0  z-10 md:h-[50px] h-40 w-[160px]  mx-150px flex flex-row  ml-[2px] md:mt-20 md:space-x-20 space-x-3 md:font-bold font-[lato] md:text-xl" >
         
 
           <div className=" md:mt-[6px] md:ml-[80px] ml-[10px] text-white hidden md:block drop-shadow-lg relative z-10  mt-[50px]">Home  </div>
@@ -47,12 +44,8 @@ export default function Land(){
                
                    <div className=" md:mt-[6px] ml-[10px] text-white  drop-shadow-lg relative z-10 hidden md:block mt-[50px]"onClick={()=>router.push("/menu")}>Menu </div>
          
-             <div ><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className="relative z-10 md:ml-[90px] ml-30 md:mt-[4px] mt-[5px] md:h-15 h-7  w-18 "/></div>
-     
-
-
-
-          <div className=" text-white hidden md:block relative z-10 md:absolute top-0  md:ml-[900px]  mt-3"onClick={()=>router.push("/cart")}>Shop  </div>
+             <div ><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className="relative z-10 md:ml-[90px] ml-30 md:mt-[4px] mt-[5px] md:h-15 h-7  w-20 "/></div>
+      <div className=" text-white hidden md:block relative z-10 md:absolute top-0  md:ml-[900px]  mt-3"onClick={()=>router.push("/cart")}>Shop  </div>
           <div className="text-white  hidden md:block md:mt-4 relative z-10 md:ml-[350px] mt-4" onClick={()=>router.push("/blog")} >Blog </div>
           <div className=" text-white hidden md:block md:mt-4 relative z-10  mt-3" onClick={()=>router.push("/contactus")}>Contact  </div>
         <div className="md:hidden w-full text-right px-4">
@@ -73,14 +66,12 @@ export default function Land(){
              </div> 
   <div className=" absolute inset-0 bg-black/40 flex items-center justify-center"></div>
           <div className=" md:mt-[200px] mt-[60px] md:ml-[450px] ml-[80px] space-x-4 relative z-10 ">
-           <h1 className=" font-bold  md:text-8xl text-3xl drop-shadow-lg text-white font-[marcellus]"> Best Restaurant</h1>  
-           <div className="md:w-50 md:h-50 w-20 h-20 border-2 border-[#b8860b] rounded-full md:ml-[130px] ml-[80px] md:mt-[50px] mt-[10px] ">
-          
+           <h1 className=" font-bold md:mt-0 mt-15 md:text-8xl text-3xl drop-shadow-lg text-white font-[marcellus]"> Best Restaurant</h1>  
+           <div className="md:w-50 hidden md:block md:h-50 w-20 h-20 border-2 border-[#b8860b] rounded-full md:ml-[130px] ml-[80px] md:mt-[50px] mt-[10px] ">
          <h3 className="md:text-2xl text-sm font-bold md:ml-14 ml-3 mt-6 md:mt-14 text-white font-[lato]">Restan</h3>   
-         <h2 className="text-white md:ml-14 md:mt-3 hidden md:block">Best Food<br></br> since-1865S</h2>
+         <h2 className="text-white md:ml-14 md:mt-3 ">Best Food<br></br> since-1865S</h2>
            </div>
-       
-               </div>   
+        </div>   
         <div className="md:flex flex-row flex-col">
         <div><Book/></div>
         <div className="md:flex flex-row flex-col">
@@ -92,51 +83,36 @@ export default function Land(){
          </div>    
         </div>  
         </div>
-                        </div>
-                       
-                        
-    <div className="flex flex-col  h-[500px]">
+        </div>
+       <div className="flex flex-col  h-[500px]">
             <div className="  md:mt-[500px] mt-240  md:flex flex-row flex-col  md:mt-0 mt-5">
        <div> <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F13.png&w=640&q=75"className="h-[90px] w-[100px] md:ml-[100px] ml-20"/><h2 className="flex flex-col text-black md:ml-[110px] text-2xl mt-[25px] ml-20 font-bold dark:text-white">Quality foods</h2><h4 className="text-black md:ml-[110px] ml-20 dark:text-white">Belonging sir curiosity discovery extremity yet<br></br> forfeited prevailed own off. Traveling by<br></br> introduced of mr terminated.</h4></div> 
         <div> <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F14.png&w=640&q=75"className="h-[90px] w-[100px] md:ml-[100px] ml-20 md:mt-0 mt-10"/><h2 className="flex flex-col text-black md:ml-[110px] text-2xl md:mt-[25px] mt-5 ml-20 font-bold dark:text-white">Fast Delivery</h2><h4 className="text-black md:ml-[110px] ml-20 dark:text-white">Belonging sir curiosity discovery extremity yet<br></br> forfeited prevailed own off. Traveling by<br></br> introduced of mr terminated.</h4></div> 
           <div>  <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F15.png&w=640&q=75"className="h-[90px] w-[100px] md:ml-[100px] ml-20  md:mt-0 mt-10"/><h2 className="flex flex-col text-black md:ml-[110px] text-2xl md:mt-[25px] mt-5 ml-20 font-bold dark:text-white">Delicious Recipes</h2><h4 className="text-black md:ml-[110px] ml-20 dark:text-white">Belonging sir curiosity discovery extremity yet<br></br> forfeited prevailed own off. Traveling by<br></br> introduced of mr terminated.</h4></div> 
           </div>
          <div>
-          
-         </div>
+        </div>
           </div>
-         
-         
-      <div >
+         <div >
             <div className="flex md:flex-row flex-col">
-             
-           <img src="https://restan-nextjs.vercel.app/assets/img/shape/4.jpg" className="md:h-[600px] h-250 md:w-[1200px] w-full md:ml-[70px] md:mt-[300px] mt-330 rounded-[50px]"/>
-
-           
-             <div className="flex md:flex-row flex-col md:ml-[150px] ml-15 absolute"> 
+            <img src="https://restan-nextjs.vercel.app/assets/img/shape/4.jpg" className="md:h-[600px] h-250 md:w-[1200px] w-full md:ml-[70px] md:mt-[300px] mt-330 rounded-[50px]"/>
+            <div className="flex md:flex-row flex-col md:ml-[150px] ml-15 absolute"> 
              <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F1.png&w=1080&q=75"className="h-[200px] w-[200px] md:mt-[400px] mt-99 md:ml-[20px] hidden md:block"/>
               <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F12.png&w=1080&q=75"className="h-[150px] w-[150px] md:mt-[650px] mt-100 flex flex-col absolute ml-[40px] hidden md:block"/>
              <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F15.png&w=1080&q=75"className="h-[250px] w-[250px] md:mt-[480px] mt-370 "/>
-       <div> <h2 className="flex flex-row text-black md:mt-[450px] mt-15 md:ml-[90px] -ml-7 text-2xl font-bold dark:text-white">Today Special Offer</h2>
+           <div> <h2 className="flex flex-row text-black md:mt-[450px] mt-15 md:ml-[90px] -ml-7 text-2xl font-bold dark:text-white">Today Special Offer</h2>
            <h1 className="flex flex-row text-black mt-[30px] md:ml-[90px] -ml-7 text-4xl font-bold font-[marcellus] ">Explore Irresistible<br></br> Promotions!</h1>
            <h6 className="text-black mt-[20px] md:ml-[90px] -ml-7 ">Contrasted dissimilar get joy you instrument out reasonably. Again keeps<br></br> at no meant stuff. To perpetual do existence northward as difficult<br></br> preserved daughters. Continued at up to zealously necessary.
          </h6>
            <div className=" md:ml-[90px] mt-[30px] relative z-10"><h2 className="bg-[#7b4c2b] hover:bg-[#4b2a14] text-white w-[90px] h-[50px] w-[150px] rounded-[30px]  flex items-center justify-center">Order Today </h2></div> 
          </div>
           </div>
-             
-           </div> 
           </div> 
-    
-          
-          
-          
-            <div className="flex flex-col ">
+          </div> 
+           <div className="flex flex-col ">
               <h1 className="text-[#7b4c2b] md:ml-0 mt-[80px] font-bold text-2xl flex items-center justify-center mt-[20px] font-[lato]">FOOD MENU</h1>
-                   
-                    <h1 className="text-black font-bold  md:text-5xl text-4xl md:ml-140 ml-8 mt-[20px]  w-full dark:text-white font-[marcellus]"> Our Specials Menu</h1> 
-                  
-              <div className=" md:bg-white md:w-[600px] w-full rounded-[5px] md:h-[80px] h-90 items-center border-2  border-black md:ml-120 md:mt-10  mt-5 md:flex flex-row flex flex-col md:text-xl text-2xl text-black font-[lato]" >
+              <h1 className="text-black font-bold  md:text-5xl text-4xl md:ml-140 ml-8 mt-[20px]  w-full dark:text-white font-[marcellus]"> Our Specials Menu</h1> 
+            <div className=" md:bg-white md:w-[600px] w-full rounded-[5px] md:h-[80px] h-90 items-center border-2  border-black md:ml-120 md:mt-10  mt-5 md:flex flex-row flex flex-col md:text-xl text-2xl text-black font-[lato]" >
                  <h2 className=" absolute md:ml-[30px] ml-27 md:mt-0 -mt-50 bg-pink-200 md:bg-white">Main Dishes</h2>
                  <h2 className="absolute md:ml-50 ml-27 md:mt-0 -mt-19 bg-pink-200 md:bg-white">Desserts</h2>
                   <h2 className="absolute md:ml-[320px] ml-27 md:mt-0 mt-14 bg-pink-200 md:bg-white">Sea Food</h2>
