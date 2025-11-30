@@ -16,7 +16,7 @@ export default function Login()
                   <div className=" flex flex-col">
                     <div className=" bg-gray-100 dark:bg-gray-600 dark:bg-black w-full">
             
-                    <div className=" bg-gray-100 dark:bg-gray-600 ">
+                    <div className=" bg-gray-100 dark:bg-black ">
                       <div><Navbar/></div>
                         <div className="relative bg-[url('https://i.pinimg.com/1200x/53/10/f2/5310f24f0f5ba2776ad6eb390fdd4fa9.jpg')] md:bg-cover md:bg-center bg-contain bg-no-repeat text-white text-center md:py-60 py-50 ">
             

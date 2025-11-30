@@ -17,12 +17,12 @@
                   <img className="size-12 rounded-full mx-10  " src="https://tse1.mm.bing.net/th/id/OIP.JRBIv4WXa_jQW7MLYOe06wHaHa?pid=Api&P=0&h=180"onClick={()=>router.push("/cart")}/>
                   
                   </div>
-                  <div className="md:hidden w-full text-right px-4">
+                  <div className="md:hidden -ml-7 w-full text-right px-4">
   <select
     className="p-2 mt-2 rounded bg-white text-black"
     onChange={(e) => router.push(e.target.value)}
   >
-    <option value="">Menu</option>
+    <option value="">Pages</option>
     <option value="/">Home</option>
     <option value="/aboutus">About Us</option>
     <option value="/chef">Chef</option>
@@ -30,6 +30,8 @@
     <option value="/cart">Shop</option>
     <option value="/blog">Blog</option>
     <option value="/contactus">Contact</option>
+     <option value="/register">Register</option>
+    <option value="/reservation">Reservation</option>
   </select>
 </div>
                   <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:block"><h3 className="md:ml-18 md:mt-3">Reservation</h3></div>

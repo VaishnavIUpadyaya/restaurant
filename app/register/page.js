@@ -14,9 +14,9 @@ export default function Register()
     return(
      
                   <div className=" flex flex-col">
-                    <div className=" bg-gray-100 dark:bg-gray-600 dark:bg-black w-full">
+                    <div className=" bg-gray-100  dark:bg-black w-full">
             
-                    <div className=" bg-gray-100 dark:bg-gray-600 ">
+                    <div className=" bg-gray-100 dark:bg-black ">
                       <div><Navbar/></div>
                         <div className="relative bg-[url('https://i.pinimg.com/1200x/53/10/f2/5310f24f0f5ba2776ad6eb390fdd4fa9.jpg')] md:bg-cover md:bg-center bg-contain bg-no-repeat text-white text-center md:py-60 py-50 ">
             
@@ -33,7 +33,7 @@ export default function Register()
                   </div>
                 </div>
                 </div>   </div>
-                <div className="md:flex flex-row flex-col bg-white dark:bg-black md:h-180  md:mt-10 -mt-40 md:ml-20">
+                <div className="md:flex flex-row flex-col bg-white dark:bg-black md:h-180   md:mt-10 -mt-40 md:ml-20">
                     <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F14.jpg&w=3840&q=75"className="md:h-180 h-100 md:w-170 w-100 md:px-0 px-2  rounded-[20px]"/>
                        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"className="  h-15 w-25 md:-ml-127 md:mt-12 -mt-90 ml-7"/>
                      <div className="md:ml-130 ml-10">  <h1 className="text-black dark:text-white text-3xl font-bold  md:mt-25 mt-90 font-[marcellus] ">CREATE AN ACCOUNT</h1></div>
@@ -50,9 +50,9 @@ export default function Register()
                           await login (email,password);
                         }}>Register
                       </button>
-                       <div className="md:ml-20 ml-10">  <h1 className="text-black dark:text-white text-2xl font-bold  md:mt-4 mt-90 font-[marcellus] ">Or Register With</h1></div>
+                       <div className="md:ml-20 ml-0">  <h1 className="text-black dark:text-white text-2xl font-bold  md:mt-4 mt-5 font-[marcellus] ">Or Register With</h1></div>
                   
-                  <div className="flex flex-row">
+                  <div className="md:flex flex-row flex-col">
                    <button className="md:w-42 md:-ml-0 w-40 h-13 bg-gray-800 rounded-[5px] mt-5 text-white  justify-center items-center md:mx-20   hover:bg-[#7b4c2b]"onClick={async(event)=>{
                          
                         }}>Google
@@ -61,7 +61,7 @@ export default function Register()
 
                         }}>Facebook
                      </button></div>
-                       <div className=" flex flex-row ">  <h6 className="text-gray-700 dark:text-gray-500 md:ml-10 ml-2 mt-5 "> Already have an account?</h6><h6 className="text-red-500 underline mt-5 ml-2"> Login Now!</h6></div>
+                       <div className=" flex flex-row ">  <h6 className="text-gray-700 dark:text-gray-500 md:ml-10 ml-2 md:mt-5 mt-3 "> Already have an account?</h6><h6 className="text-red-500 underline md:mt-5 mt-3 ml-2"> Login Now!</h6></div>
                     </div>
            </div>
      <div >

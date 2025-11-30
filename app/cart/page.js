@@ -15,7 +15,8 @@ const removeItem =(index)=>{
   setCart (updatedCart);
   localStorage.setItem("cart",JSON.stringify (updatedCart));
 };
-    return(
+   
+return(
         <div className=" bg-gray-100 ">
        <div><Navbar/></div>
          <div className="relative bg-[url('https://i.pinimg.com/1200x/53/10/f2/5310f24f0f5ba2776ad6eb390fdd4fa9.jpg')] md:bg-cover bg-contain bg-no-repeat md:bg-center text-white text-center py-60  ">
@@ -48,7 +49,8 @@ const removeItem =(index)=>{
                 <td className="border border-gray-400 px-4 py-2">
                   <button
                     className="bg-[#e47d72] hover:bg-red-700 text-white font-bold py-2 px-4  rounded-full  md:ml-15"
-                    onClick={() => {
+                    onClick={(e) => {
+                      e.stopPropagation(); 
                       removeItem(index);
                      
                     }}>X</button>

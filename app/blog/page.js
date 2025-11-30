@@ -8,7 +8,7 @@ export default function Blog(){
   const router=useRouter();
     return(
         <div>
-        <div className=" md:bg-gray-100 dark:bg-gray-600 dark:bg-black w-full">
+        <div className=" md:bg-gray-100  dark:bg-black w-full">
 
        
            <div><Navbar/></div>
@@ -29,10 +29,10 @@ export default function Blog(){
 
         
            <div className="flex flex-col">
-  <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=1920&q=75"className="md:h-130 h-50 md:w-210 w-100 md:px-0 px-5 md:ml-80 ml-4 md:mt-30 -mt-40" /> 
-   <div className=" md:ml-80 ml-5 bg-white shadow-lg  md:w-210 w-full md:h-70 h-90 md:px-4 px-2 py-5 flex flex-col ">
+  <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=1920&q=75"className="md:h-130 h-50 md:w-210 w-100 md:px-0 px-2 md:ml-80  md:mt-30 -mt-40" /> 
+   <div className=" md:ml-80 bg-white shadow-lg  md:w-210 w-full md:h-70 h-90 md:px-4 px-2 py-5 flex flex-col ">
   
-      <h3 className="md:text-3xl text-2xl md:mt-7 md:ml-8 ml-4 font-bold text-gray-800 font-[marcellus]  ">
+      <h3 className="md:text-3xl text-2xl md:mt-7 md:ml-8 font-bold text-gray-800 font-[marcellus]  ">
         Picked up a Brussels burger Sprouts.
       </h3>
       <h5 className="text-gray-700 md:mt-3 md:ml-8 ml-4 mt-3 font-[lato]">Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now</h5>
@@ -43,11 +43,11 @@ export default function Blog(){
   
   
   
-   <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2.jpg&w=1920&q=75"className="h-50 md:h-130 md:w-210 w-100 md:ml-80 md:mt-10 mt-10 md:px-0 px-5 " />   
+   <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2.jpg&w=1920&q=75"className="h-50 md:h-130 md:w-210 w-100 md:ml-80 md:mt-10 mt-10 md:px-0 px-2 " />   
    
 
      
-    <div className="  md:ml-80  ml-5 bg-white shadow-lg  md:w-210 w-full md:h-70 h-90  md:px-4 px-2 py-5 flex flex-col ">
+    <div className="  md:ml-80   bg-white shadow-lg  md:w-210 w-full md:h-70 h-90  md:px-4 px-2 py-5 flex flex-col ">
 
       <h3 className="md:text-3xl md:mt-7  md:ml-8 ml-4 text-2xl font-bold text-gray-800  font-[marcellus]">
         This prefabricated passive  house is highly sustainable
@@ -64,9 +64,9 @@ export default function Blog(){
 
 
 
-           <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F3-full.jpg&w=3840&q=75"className="h-50 md:h-130 md:w-210 w-100 md:ml-80 md:mt-10 mt-10 md:px-0 px-5 " />   
+           <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F3-full.jpg&w=3840&q=75"className="h-50 md:h-130 md:w-210 w-100 md:ml-80 md:mt-10 mt-10 md:px-0 px-2 " />   
 
-    <div className="  md:ml-80  ml-5 bg-white shadow-lg  md:w-210 w-full md:h-70 h-90 px-2 md:px-4 py-5 flex flex-col ">
+    <div className="  md:ml-80   bg-white shadow-lg  md:w-210 w-full md:h-70 h-90 px-2 md:px-4 py-5 flex flex-col ">
 
       <h3 className="md:text-3xl md:mt-7 md:ml-8 ml-4 text-2xl font-bold text-gray-800  font-[marcellus]">
   Overcame breeding point concerns has.

@@ -19,15 +19,15 @@ export default function Reservation(){
         </p>
   </div>
                 </div>
-                <div className=" flex flex-row ">
+                <div className=" md:flex flex-row flex-col">
                  
                     
     
-    <iframe src="https://www.youtube.com/embed/F3zw1Gvn4Mk?controls=0&amp;loop=1&amp;preload=metadata&amp;enablejsapi=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1" frameBorder="0" width="100%" height="100%" allow="accelerometer; fullscreen; autoplay; encrypted-media; gyroscope; picture-in-picture" id="widget6" title="Mr Fox Restaurant Promo Video" className="h-130 w-190 mt-60 ml-20"></iframe>
+    <iframe src="https://www.youtube.com/embed/F3zw1Gvn4Mk?controls=0&amp;loop=1&amp;preload=metadata&amp;enablejsapi=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1" frameBorder="0" width="100%" height="100%" allow="accelerometer; fullscreen; autoplay; encrypted-media; gyroscope; picture-in-picture" id="widget6" title="Mr Fox Restaurant Promo Video" className="md:h-130 h-90 md:w-190 md:mt-60 -mt-20 md:ml-20 md:px-0 px-3" ></iframe>
 
                 <div className="md:-ml-35 h-200 mt-30"><Book/></div> 
                 </div>
-                <div ><About/></div>
+                <div className="md:mt-0 -mt-50"><About/></div>
                 <div className="mt-25"> <Footer/></div>
         </div>
     )

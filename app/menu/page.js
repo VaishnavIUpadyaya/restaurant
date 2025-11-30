@@ -467,7 +467,7 @@ A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio 
     </div>
    
   </div></div>
-<div className="md:mt-20 md:ml-0 -ml-10"><Book/></div>
+<div className="md:mt-20 -mt-10 md:ml-0 -ml-10"><Book/></div>
 </div>
 
 <div><Footer/></div>
